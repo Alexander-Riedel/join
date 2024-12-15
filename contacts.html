@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./assets/js/login-status.js"></script>
+    <script src="./assets/js/w3-include.js"></script>
+    <script src="./assets/js/contact-templates.js"></script>
+    <script src="./assets/js/edit-task.js"></script>
+    <script src="./assets/js/addTask.js"></script>
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
+    <link rel="stylesheet" href="./assets/css/contacts.css">
+    <link rel="stylesheet" href="./assets/css/contact-media-queries.css">
+    <title>Join - Contacts</title>
+
+</head>
+
+<body onload="includeHTML(), openContacts()">
+    <div id="color-my-back"></div>
+    <div id="color-my-back-edit-card" class="color-my-back-edit-card" onclick="hideEditCard()"></div>
+    
+    <script src="./assets/js/contacts.js"></script>
+    <script src="./assets/js/storage.js"></script>
+    <!-- template left menu -->
+    <div class="preload-side-menu" w3-include-html="assets/html-templates/side_menu.html"></div>
+
+    <!-- right container -->
+    <div class="main-cont" id="main-content">
+
+        <!-- template header -->
+        <div class="preload-header" w3-include-html="assets/html-templates/header.html"></div>
+
+        <div id="contacts">
+           
+            <div id="contact-overview">
+                <div id="add-new-contact" onclick="renderAddContactCard()">
+                    <p>Add new contact</p>
+                    <img id="add-new-contact-img" src="./assets/img/person_add.png" alt="">
+                </div>
+                <div id="render-contacts-overview">hier werden die kontakte hineingerendert</div>
+                <div class="down-placeholder"></div>
+            </div>
+            <div id="details-of-contacts">
+                <div id="welcome-to-contacts">
+                    <h1>Contacts</h1>
+                    <div id="contact-seperator"></div>
+                    <div id="contact-slogan">Better with a team</div>
+                    <div id="arrow-back-mobile" onclick="backToContactListMobile()">
+                        <svg width="54" height="54" viewBox="0 0 38 38" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M13.0097 17.8855H30.1871C31.0362 17.8855 31.7246 18.5739 31.7246 19.4231C31.7246 20.2722 31.0362 20.9606 30.1871 20.9606H13.0097L20.17 28.1209C20.7704 28.7213 20.7704 29.6946 20.17 30.295C19.5697 30.8954 18.5963 30.8954 17.996 30.295L8.53824 20.8373C7.75719 20.0562 7.75719 18.7899 8.53824 18.0089L17.996 8.55115C18.5963 7.9508 19.5697 7.9508 20.17 8.55115C20.7704 9.1515 20.7704 10.1249 20.17 10.7252L13.0097 17.8855Z" fill="#29ABE2"/>
+                        </svg>
+                    </div>
+                </div>
+                <div id="detail-view-of-contacts"></div>          
+            </div>  
+        </div>
+        
+       
+        <div id="render-my-edit-card"></div>
+        <div id="add-contact-card">
+            <div id="slide-container" onclick="closeContactAddCard()"></div>
+            <div id="create-contact" onclick="">
+
+                <div id="design-sector">
+                    <img src="./assets/img/logo4SideBar.svg" alt="join logo">
+                    <h2>Add contact</h2>
+                    <p>Tasks are better with a team!</p>
+                    <div id="horizon-seperator"></div>
+                </div>
+
+                <div id="fill-in-sector">
+                    <div class="move-img">
+                        <div class="cancel-svg" onclick="closeContactAddCard()">
+                            <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path id="change-cancel-svg-color-head" d="M12.2496 11.9998L17.4926 17.2428M7.00659 17.2428L12.2496 11.9998L7.00659 17.2428ZM17.4926 6.75684L12.2486 11.9998L17.4926 6.75684ZM12.2486 
+                        11.9998L7.00659 6.75684L12.2486 11.9998Z" stroke="#2A3647" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                        </div>
+                    </div>
+                <!-- form + onsubmit hinzugefügt -->
+                    <form onsubmit="pushContactInfo(); return false">   
+                    <div id="img-and-inputs">
+                        <div id="put-the-img">
+                            <img id="img-big-person" src="./assets/img/person_new.svg" alt="">
+                        </div>
+                        <div class="input-container">
+                            <div id="input-fields">                                
+                                <div id="contact-name" class="contact-input-area">
+                                    <input autocomplete="off" style="font-family: Inter;" type="text" placeholder="Vorname Nachname" id="contact-name-input" pattern="^[A-Za-z]+\s[A-Za-z]+$" title="Bitte geben Sie zwei Namen (Vorname Nachname) ein, getrennt durch ein Leerzeichen." required>
+                                    <img src="./assets/img/person.png" alt="Name">
+                                </div>
+                                <div id="contact-email" class="contact-input-area">
+                                    <input autocomplete="off" style="font-family: Inter;" type="email" placeholder="E-Mail" id="contact-email-input" required>
+                                    <img src="./assets/img/mail.png" alt="E-Mail">
+                                </div>
+                                <div id="contact-phone" class="contact-input-area">
+                                    <input autocomplete="off" style="font-family: Inter;" type="tel" placeholder="Phone" id="contact-phone-input" pattern="[0-9]+" required>
+                                    <img src="./assets/img/call.png" alt="Phone">
+                                </div>                            
+                            </div>
+                            <div class="cancel-and-create-contact-btns">
+                                <div id="cancel-contact-btn" onclick="closeContactAddCard()">
+                                    <p>Cancel</p>
+                                    <div class="cancel-create-img">
+                                        <svg width="25" height="24" viewBox="0 0 25 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path id="change-cancel-svg-color-btn" d="M12.2496 11.9998L17.4926 17.2428M7.00659 17.2428L12.2496 11.9998L7.00659 17.2428ZM17.4926 6.75684L12.2486 11.9998L17.4926 6.75684ZM12.2486 
+                                        11.9998L7.00659 6.75684L12.2486 11.9998Z" stroke="#2A3647" stroke-width="2"
+                                                stroke-linecap="round" stroke-linejoin="round" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            <!-- statt div einen button mit type="submit" hinzugefügt -->
+                                <button id="create-contact-btn" type="submit">  
+                                        <span>Add Contact</span>
+                                        <img type="submit" class="cancel-create-img" src="./assets/img/check.svg" alt="">
+                                </button>                           
+                            </div>
+                        </div>
+                    </div>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

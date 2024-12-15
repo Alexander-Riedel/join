@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="assets/img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
+    <link rel="stylesheet" href="assets/css/index-media-queries.css">
+    <script src="assets/js/script_html_templates.js"></script>
+    <script src="assets/js/script.js"></script>
+    <script src="assets/js/storage.js"></script>
+    
+    <title>Join</title>
+  </head>
+
+  <body onload="init()">
+    <a href="index.html">
+      <img id="logo" src="assets/img/join-logo-at-start.svg" alt="Logo">
+  </a>
+
+  <div id="responsive-overlay">
+    <img class="responsive-logo" id="responsive-logo" src="assets/img/logo4SideBar.svg" alt="logo">
+  </div>
+
+    <div class="main-container" id="main-container">
+      <div id="top-area" class="top-area">
+
+        <div class="sign-up-area" id="sign-up-area">
+          <span>Not a Join user?</span>
+          <button onclick="renderSignUp()" class="h-button border-radius-8">Sign up</button>
+        </div>
+      </div>
+
+      <div class="middle-area" id="middle-area">
+        <div class="responsive-sign-up">
+          <span class="not-a-user">Not a Join user?</span>
+          <button onclick="renderSignUp()" class="sign-button border-radius-8">Sign up</button>
+        </div>
+      </div>
+      
+      <div class="overlay" id="overlay">
+        <div class="message" id="animated-message"></div>
+      </div>    
+     
+      <div class="footer">
+        <a href="privacy-policy.html" target="_blank" >Privacy Policy</a>
+        <a href="legal-notice.html" target="_blank" >Legal Notice</a>
+      </div>
+    </div>
+  </body>
+</html>
+
+ 
+
+      

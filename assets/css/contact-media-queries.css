@@ -1,0 +1,443 @@
+@media (max-width: 1200px) {
+/*--------------------------contacts detail view-------------------------*/
+    #contact-seperator {
+        display: none;
+    }
+
+    #contact-slogan{
+        display: none;
+    }
+
+    .first-letters-for-details{
+        margin-right: 30px;
+    }
+
+    #detail-view-of-contacts{
+        margin-left: 0;
+    }
+/*--------------------------contacts add new contact-------------------------*/
+}
+
+@media (max-width: 992px) {
+/*--------------------------contacts detail view-------------------------*/
+    #contact-overview{
+        width: 380px;
+        height:  calc(100vh - 80px);;
+    }
+
+    #add-new-contact{
+        width: 340px;
+    }
+
+    .down-placeholder{
+        display: flex;
+    }
+/*--------------------------contacts add new contact-------------------------*/
+    #put-the-img{
+        margin: 0;
+        width: 140px;
+    }
+
+    #design-sector{
+        width: 22vw;
+    }
+/*--------------------------contacts edit card-------------------------*/
+    .contact-input-area-edit img{
+        display: none;
+    }
+
+    .contact-input-area-edit{
+        width: 240px;
+    }
+}
+
+@media (max-width: 768px) {
+/*--------------------------contacts detail view-------------------------*/
+    .email-and-phone-head{
+        font-size: 18px;
+    }
+
+    .first-letters-for-details{
+        display: none;
+    }
+
+    #detail-view-of-contacts{
+        margin-left: 0;
+        padding-left: 12px;
+    }
+
+    #welcome-to-contacts{
+        padding: 20px 10px 20px 0px;
+    }
+
+    #main-name h2{
+        font-size: 22px;
+    }
+
+    #welcome-to-contacts h1{
+        font-size: 40px;
+    }
+
+    .contact-seperator-horizontal{
+        width: 280px;
+    }
+
+    .contact-block{
+        width: 300px;
+        margin-right: 0;
+    }
+
+    .sub-contact-block{
+        margin-right: 0;
+        margin-left: 0;
+        width: 280px;
+    }
+
+    .sub-contact-block-marked{
+        margin-left: 0;
+        margin-right: 0;
+        width: 280px;
+    }
+/*--------------------------contacts add new contact-------------------------*/
+    #put-the-img{
+        display: none;
+    }
+
+    #img-and-inputs{
+        margin-left: 38px;
+    }
+
+    #design-sector h2{
+        font-size: 28px;
+    }
+/*--------------------------contacts edit card-------------------------*/
+    .container-for-first-letters-in-edit{
+        display: none;
+    }
+
+    .first-letters-and-inputs{
+        margin-left: 48px;
+    }
+
+    .left-side-edit-card{
+        padding-left: 18px;
+        width: 160px;
+    }
+
+    .left-side-edit-card h2{
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 576px) {
+/*--------------------------contacts detail view-------------------------*/
+    #arrow-back-mobile{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        top: 32px;
+        right: 32px;
+        height: 54px;
+        width: 54px;
+        border-radius: 50%;
+    }
+
+    #arrow-back-mobile:hover {
+        cursor: pointer;
+    }
+
+    #add-new-contact{
+        width: 220px;
+    }
+
+    #contact-overview{
+        width: 100%;
+        z-index: 2;
+    }
+
+    #contacts{
+        justify-content: center;
+    }
+
+    #details-of-contacts{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        width: 100%;
+        top: 84px;
+        background-color: #F6F7F8;
+        overflow: hidden;
+    }
+
+    .email-and-phone-head{
+        font-size: 18px;
+    }
+
+    .first-letters-for-details{
+        display: flex;
+        padding: 14px;
+        margin-right: 0;
+    }
+
+    #detail-view-of-contacts{
+        margin-left: 0;
+        padding-left: 30px;
+    }
+
+    #welcome-to-contacts{
+        justify-content: flex-start;
+        padding: 20px 10px 20px 0px;
+    }
+
+    #main-name h2{
+        font-size: 28px;
+        width: 160px;
+    }
+    
+    #welcome-to-contacts h1{
+        font-size: 50px;
+    }
+
+    #add-new-contact{
+        position: absolute;
+        bottom: 84px;
+        right: 44px;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+    }
+
+    #add-new-contact p{
+        display: none;
+    }
+
+    #add-new-contact img{
+        margin: 0;
+    }
+
+    #render-contacts-overview{
+        padding-bottom: 74px;
+    }
+
+    .down-placeholder{
+        display: none;
+    }
+
+/*--------------------------contacts add new contact-------------------------*/
+    #render-contacts-overview{
+        height: 83vh;
+    }
+
+    .move-img{
+        position: absolute;
+        top: 48px;
+        right: 28px;
+    }
+
+    #change-cancel-svg-color-head{
+        stroke: white;
+    }
+
+    #create-contact{
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+        margin-top: 70px;
+    }
+    #add-contact-card{
+        align-items: flex-start;
+        overflow: auto;
+    }
+
+    #design-sector{
+        width: 80vw;
+        height: 212px;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 24px;
+        padding-bottom: 64px;
+    }
+
+    #design-sector img{
+        display: none;
+    }
+
+    #design-sector p{
+        max-width: 250px;
+    }
+
+    #put-the-img{
+        display: flex;
+        position: absolute;
+        top: 184px;
+    }
+
+    .input-container{
+        margin-top: 64px;
+    }
+
+    #fill-in-sector{
+        align-items: center;
+        width: 80vw;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 24px;
+        padding-left: 32px;
+    }
+
+    #img-and-inputs{
+        flex-direction: column;
+        margin-left: -32px;
+        margin-top: 0;
+    }
+
+    .contact-input-area{
+        padding: 0 8px 0 0;
+        margin: 8px 0 8px 0;
+        width: 276px;
+    }
+
+    #cancel-contact-btn{
+        display: none;
+    }
+
+    .cancel-and-create-contact-btns{
+        justify-content: center;
+        padding-bottom: 14px;
+    }
+/*--------------------------contacts edit card-------------------------*/
+  
+    #edit-card{
+        flex-direction: column;
+        align-items: center;
+        width: 80vw;
+    }
+
+    .left-side-edit-card{
+        justify-content: flex-start;
+        padding: 0;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 24px;
+        border-top-left-radius: 24px;
+        height: 212px;
+        width: 310px;
+    }
+
+    .left-side-edit-card svg{
+        display: none;
+    }
+
+    .left-side-edit-card div, h2{
+        margin-left: 24px;
+    }
+
+    .left-side-edit-card h2{
+        margin-top: 24px;
+    }
+
+    .left-side-edit-card h2{
+        font-size: 24px;
+    }
+
+    .right-side-edit-card{
+        width: 310px;
+        border-top-right-radius: 0;
+        border-bottom-left-radius: 24px;
+    }
+
+    .container-for-first-letters-in-edit{
+        display: flex;
+        position: absolute;
+        top: 176px;
+        left: 100px;
+        height: 64px;
+    }
+
+    .first-letters-and-inputs{
+        justify-content: center;
+        margin-left: 14px;
+        margin-top: 48px;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .contact-input-area-edit{
+        margin-top: 14px;
+        margin-bottom: 14px;
+        margin-right: 0;
+        padding-right: 0;
+        width: 260px;
+    }
+
+    .edit-informations{
+        justify-content: center;
+    }
+
+    .cancel-and-edit-contact-btn{
+        justify-content: space-between;
+        width: 260px;
+        margin-bottom: 24px;
+    }
+
+    .delete-contact-in-edit-card{
+        margin-right: 0;
+    }
+
+    .edit-and-delete{
+        display: none;
+        position: absolute;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        z-index: 2;
+        height: 120px;
+        width: 120px;
+        left: 100%;
+        bottom: 84px;
+        background-color: white;
+        border-top-right-radius: 20%;
+        border-top-left-radius: 20%;
+        border-bottom-left-radius: 20%;
+        box-shadow: 0px 4px 4px 0px #00000040;
+        animation: slideInMobile 500ms forwards;
+    }
+
+    @keyframes slideInMobile {
+        0% {
+            left: 100%;
+        }
+        100% {
+            left: calc(100% - 132px);
+        }
+    }
+    .close-edit-delete-mobile{
+        animation: slideOutMobile 500ms forwards;
+    }
+
+    @keyframes slideOutMobile {
+        0% {
+            left: calc(100% - 132px);
+        }
+        100% {
+            left: 100%;
+        }
+    }
+
+    #open-edit-function-mobile{
+        display: flex;
+        position: absolute;
+        justify-content: center;
+        align-items: center;
+        margin: 16px;
+        right: 44px;
+        bottom: 68px;
+        width: 64px;
+        height: 64px;
+        border-radius: 50%;
+        background-color: rgb(42, 54, 71);;
+    }
+
+    #main-name{
+        overflow: hidden;
+    }
+}
